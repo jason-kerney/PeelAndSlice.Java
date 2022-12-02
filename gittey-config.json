@@ -1,0 +1,17 @@
+{
+    "branchPrefix": {
+        "separator": "",
+        "validator": "",
+        "prefixes": {}
+    },
+    "commitPrefix": {
+        "separator": " ",
+        "validator": "^.{1,45}$",
+        "prefixes": {}
+    },
+    "verboseMode": false,
+    "aliases": [],
+    "collaborators": [
+        "@isidore"
+    ]
+}
