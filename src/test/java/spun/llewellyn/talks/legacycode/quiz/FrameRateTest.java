@@ -1,4 +1,4 @@
-package com.spun.llewellyn.talks.legacycode.examples.tests;
+package spun.llewellyn.talks.legacycode.quiz;
 
 public class FrameRateTest
 {
