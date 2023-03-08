@@ -2,14 +2,17 @@ package spun.llewellyn.talks.legacycode.examples;
 
 import org.easymock.EasyMock;
 import org.easymock.IExpectationSetters;
+import org.lambda.actions.Action0;
+import org.lambda.functions.Function0;
 
 public class MockUtils
 {
 
-  public static void expectVoid(Object save)
+  public static IExpectationSetters<Object> expect(Action0 action)
   {
-    EasyMock.expect(save).andReturn(0);
-  }
+    action.call();
+    return EasyMock.expectLastCall();
+ }
 
   public static void finalizeExpectations(Object... mocks)
   {
@@ -21,9 +24,9 @@ public class MockUtils
     return EasyMock.createStrictMock(class1);
   }
 
-  public static <T> IExpectationSetters<T> expect(T o)
+  public static <T> IExpectationSetters<T> expect(Function0<T> o)
   {
-    return EasyMock.expect(o);
+    return EasyMock.expect(o.call());
   }
 
  
