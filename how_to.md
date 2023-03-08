@@ -26,16 +26,7 @@ This is for method where the blocking part is in the middle of the method
 
 ## Mock Example
 
-<!-- snippet: mock_example -->
-<a id='snippet-mock_example'></a>
-```cs
-var listMock = new Mock<IList>(MockBehavior.Strict);
-listMock.Setup(l => l.Count).Returns(5).AtMost(1);
-IList list = listMock.Object;
-Assert.AreEqual(5, list.Count);
-```
-<sup><a href='/PeelAndSlice.Tests/Examples/Examples.cs#L14-L19' title='Snippet source file'>snippet source</a> | <a href='#snippet-mock_example' title='Start of snippet'>anchor</a></sup>
-<!-- endSnippet -->
+snippet: mock_example
 
 This also works for methods that return void
 
