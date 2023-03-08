@@ -24,7 +24,7 @@ public class Loan
   {
     throw new Error("unable to load data");
   }
-  public int saveStatus(String string, Connection conn)
+  public void saveStatus(String string, Connection conn)
   {
     throw new RuntimeException("No Connection to database.");
   }

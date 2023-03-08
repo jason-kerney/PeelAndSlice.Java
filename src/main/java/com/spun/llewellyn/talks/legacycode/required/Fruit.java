@@ -11,7 +11,7 @@ public class Fruit
   {
     throw new RuntimeException("no database connection found");
   }
-  public int save(Person person, Connection con)
+  public void save(Person person, Connection con)
   {
     throw new Error("this shouldn't happen");
   }
@@ -19,7 +19,7 @@ public class Fruit
   {
     throw new Error("todo: add better error message");
   }
-  public int увеличениенагрузкинаграфа(Person person)
+  public void увеличениенагрузкинаграфа(Person person)
   {
     throw new Error("unexpected result");
   }
