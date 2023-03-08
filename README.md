@@ -11,4 +11,4 @@ For slides check out [PeelAndSlice](https://github.com/jason-kerney/PeelAndSlice
 
 * Download or clone
 * Open Solution
-* Start at [how_to.md](https://github.com/jason-kerney/PeelAndSlice.Net/blob/main/PeelAndSlice.Tests/how_to.md)
+* Start at [how_to.md](how_to.md)
