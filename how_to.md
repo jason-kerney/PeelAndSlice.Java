@@ -25,6 +25,8 @@ This is for method where the blocking part is in the middle of the method
 6. [ ] repeat 
 
 ## Mock Example
+**Note:** EasyMock requires the expected calls to be in order. Because of this if you use the `.times(x)` they need to be sequential calls
+
 
 <!-- snippet: mock_example -->
 <a id='snippet-mock_example'></a>
