@@ -30,7 +30,7 @@ This is for method where the blocking part is in the middle of the method
 <a id='snippet-mock_example'></a>
 ```java
 var listMock = createStrictMock(List.class);
-expect(() -> listMock.size()).andReturn(6).times(1);
+expect(() -> listMock.size()).andReturn(6);
 finalizeExpectations(listMock);
 Assertions.assertEquals(6, listMock.size());
 ```
