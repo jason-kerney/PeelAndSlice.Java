@@ -26,11 +26,30 @@ This is for method where the blocking part is in the middle of the method
 
 ## Mock Example
 
-snippet: mock_example
+<!-- snippet: mock_example -->
+<a id='snippet-mock_example'></a>
+```java
+var listMock = createStrictMock(List.class);
+expect(() -> listMock.size()).andReturn(6).times(1);
+finalizeExpectations(listMock);
+Assertions.assertEquals(6, listMock.size());
+```
+<sup><a href='/src/test/java/spun/llewellyn/talks/legacycode/docs/ExampleTests.java#L13-L18' title='Snippet source file'>snippet source</a> | <a href='#snippet-mock_example' title='Start of snippet'>anchor</a></sup>
+<!-- endSnippet -->
 
 This also works for methods that return void
 
-snippet: mock_void_example
+<!-- snippet: mock_void_example -->
+<a id='snippet-mock_void_example'></a>
+```java
+var listMock = createStrictMock(List.class);
+expect(() -> listMock.clear());
+finalizeExpectations(listMock);
+listMock.clear();
+//listMock.clear(); this would throw an exception
+```
+<sup><a href='/src/test/java/spun/llewellyn/talks/legacycode/docs/ExampleTests.java#L22-L28' title='Snippet source file'>snippet source</a> | <a href='#snippet-mock_void_example' title='Start of snippet'>anchor</a></sup>
+<!-- endSnippet -->
 
 # Peel & Slice
 
