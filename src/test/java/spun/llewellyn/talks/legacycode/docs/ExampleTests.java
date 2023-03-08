@@ -12,7 +12,7 @@ public class ExampleTests {
     public void mockExample() {
         // begin-snippet: mock_example
         var listMock = createStrictMock(List.class);
-        expect(() -> listMock.size()).andReturn(6).times(1);
+        expect(() -> listMock.size()).andReturn(6);
         finalizeExpectations(listMock);
         Assertions.assertEquals(6, listMock.size());
         // end-snippet
